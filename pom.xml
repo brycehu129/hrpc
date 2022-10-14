@@ -9,7 +9,9 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>hrpc-annotion</module>
+        <module>hrpc-annotation</module>
+        <module>hrpc-test</module>
+        <module>hrpc-common</module>
     </modules>
 
     <properties>
