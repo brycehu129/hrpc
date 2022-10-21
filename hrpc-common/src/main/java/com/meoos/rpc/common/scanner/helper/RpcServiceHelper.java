@@ -1,4 +1,4 @@
-package com.meoos.rpc.scanner.helper;
+package com.meoos.rpc.common.scanner.helper;
 
 /**
  * @Author Meoos

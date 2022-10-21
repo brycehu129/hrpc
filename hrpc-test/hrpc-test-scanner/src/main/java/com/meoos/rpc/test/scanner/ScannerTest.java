@@ -1,8 +1,8 @@
 package com.meoos.rpc.test.scanner;
 
-import com.meoos.rpc.scanner.ClassScanner;
-import com.meoos.rpc.scanner.reference.RpcReferenceScanner;
-import com.meoos.rpc.scanner.server.RpcServiceScanner;
+import com.meoos.rpc.common.scanner.ClassScanner;
+import com.meoos.rpc.common.scanner.reference.RpcReferenceScanner;
+import com.meoos.rpc.common.scanner.server.RpcServiceScanner;
 import org.junit.Test;
 
 import java.io.IOException;

@@ -1,8 +1,8 @@
-package com.meoos.rpc.scanner.server;
+package com.meoos.rpc.common.scanner.server;
 
 import com.meoos.rpc.annotation.RpcService;
-import com.meoos.rpc.scanner.ClassScanner;
-import com.meoos.rpc.scanner.helper.RpcServiceHelper;
+import com.meoos.rpc.common.scanner.ClassScanner;
+import com.meoos.rpc.common.scanner.helper.RpcServiceHelper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

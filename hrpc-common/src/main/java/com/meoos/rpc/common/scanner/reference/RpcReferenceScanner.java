@@ -1,13 +1,12 @@
-package com.meoos.rpc.scanner.reference;
+package com.meoos.rpc.common.scanner.reference;
 
 import com.meoos.rpc.annotation.RpcReference;
-import com.meoos.rpc.scanner.ClassScanner;
+import com.meoos.rpc.common.scanner.ClassScanner;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 import java.lang.reflect.Field;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;

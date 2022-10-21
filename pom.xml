@@ -12,6 +12,10 @@
         <module>hrpc-annotation</module>
         <module>hrpc-test</module>
         <module>hrpc-common</module>
+        <module>hrpc-provider</module>
+        <module>hrpc-codec</module>
+        <module>hrpc-serialization</module>
+        <module>hrpc-protocol</module>
     </modules>
 
     <properties>

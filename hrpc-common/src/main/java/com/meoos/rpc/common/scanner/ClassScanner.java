@@ -1,4 +1,4 @@
-package com.meoos.rpc.scanner;
+package com.meoos.rpc.common.scanner;
 
 import java.io.File;
 import java.io.FileFilter;
