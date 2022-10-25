@@ -12,6 +12,8 @@ import io.netty.channel.EventLoopGroup;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
+import io.netty.handler.codec.string.StringDecoder;
+import io.netty.handler.codec.string.StringEncoder;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -57,8 +59,10 @@ public class BaseServer implements Server {
                         @Override
                         protected void initChannel(SocketChannel channel) throws Exception {
                             channel.pipeline()
-                                    .addLast(new RpcDecoder())
-                                    .addLast(new RpcEncoder())
+                                    //.addLast(new RpcDecoder())
+                                    //.addLast(new RpcEncoder())
+                                    .addLast(new StringEncoder())
+                                    .addLast(new StringDecoder())
                                     .addLast(new RpcProviderHandler(reflectType,handlerMap));
                         }
                     })

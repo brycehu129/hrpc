@@ -9,12 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>hrpc-provider</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>hrpc-provider-common</module>
-        <module>hrpc-provider-native</module>
-    </modules>
+    <artifactId>hrpc-constants</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>

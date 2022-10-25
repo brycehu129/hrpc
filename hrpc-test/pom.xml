@@ -13,6 +13,8 @@
     <packaging>pom</packaging>
     <modules>
         <module>hrpc-test-scanner</module>
+        <module>hrpc-test-provider</module>
+        <module>hrpc-test-api</module>
     </modules>
 
     <properties>
