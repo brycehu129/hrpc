@@ -10,7 +10,7 @@ import org.slf4j.LoggerFactory;
  * @Version 1.0.0
  * @description DemoService实现类
  */
-@RpcService(interfaceClass = DemoService.class,interfaceClassName = "com.meoos.rpc.test.api.DemoService",version = "1.0.0",group = "binghe")
+@RpcService(interfaceClass = DemoService.class,interfaceClassName = "com.meoos.rpc.test.api.DemoService",version = "1.0.0",group = "meoos")
 public class ProviderDemoServiceImpl implements DemoService{
 
     private static final Logger logger = LoggerFactory.getLogger(ProviderDemoServiceImpl.class);

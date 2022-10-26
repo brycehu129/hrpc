@@ -27,7 +27,7 @@ import java.util.Map;
  * @Version 1.0.0
  * @description
  */
-public class RpcProviderHandler extends SimpleChannelInboundHandler<RpcProtocol<RpcRequest>> {
+public class RpcProviderHandler extends SimpleChannelInboundHandler<Object> {
 
     private final Logger logger = LoggerFactory.getLogger(RpcProviderHandler.class);
     //存储服务名称#版本号#分组与对象实例的映射关系
@@ -41,8 +41,8 @@ public class RpcProviderHandler extends SimpleChannelInboundHandler<RpcProtocol<
     }
 
     @Override
-    protected void channelRead0(ChannelHandlerContext ctx, RpcProtocol<RpcRequest> protocol) throws Exception {
-        ServerThreadPool.submit(() -> {
+    protected void channelRead0(ChannelHandlerContext ctx, Object protocol) throws Exception {
+        /*ServerThreadPool.submit(() -> {
             RpcHeader header = protocol.getHeader();
             header.setMsgType((byte) RpcType.RESPONSE.getType());
             RpcRequest request = protocol.getBody();
@@ -68,7 +68,14 @@ public class RpcProviderHandler extends SimpleChannelInboundHandler<RpcProtocol<
                     logger.debug("Send response for request " + header.getRequestId());
                 }
             });
-        });
+        });*/
+        logger.info("RPC提供者收到的数据为====>>> " + protocol.toString());
+        logger.info("handlerMap中存放的数据如下所示：");
+        for(Map.Entry<String, Object> entry : handlerMap.entrySet()){
+            logger.info(entry.getKey() + " === " + entry.getValue());
+        }
+        //直接返回数据
+        ctx.writeAndFlush(protocol);
     }
 
     private Object handle(RpcRequest request) throws Throwable {
