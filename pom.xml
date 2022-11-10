@@ -17,6 +17,7 @@
         <module>hrpc-serialization</module>
         <module>hrpc-protocol</module>
         <module>hrpc-constants</module>
+        <module>hrpc-consumer</module>
     </modules>
 
     <properties>

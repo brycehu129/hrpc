@@ -9,28 +9,16 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>hrpc-test</artifactId>
+    <artifactId>hrpc-consumer</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>hrpc-test-scanner</module>
-        <module>hrpc-test-provider</module>
-        <module>hrpc-test-api</module>
-        <module>hrpc-test-consumer</module>
+        <module>hrpc-consumer-common</module>
+        <module>hrpc-consumer-native</module>
     </modules>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
     </properties>
-
-
-
-    <dependencies>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.13.2</version>
-        </dependency>
-    </dependencies>
 
 </project>
